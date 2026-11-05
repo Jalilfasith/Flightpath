@@ -70,3 +70,13 @@ Additional official reading: https://git-scm.com/book/en/v2, https://www.gnu.org
 ## Portable folder
 
 The ZIP includes the application, this guide, and start.sh. It excludes Git history, hosting identity, and temporary files. You do not need npm or a cloud account to run it.
+
+## Quiz Arena
+
+Open `/#quiz` to play 4–5 question missions from a 24-question bank. Choose DevOps delivery, cloud infrastructure, Kubernetes/reliability, or a mixed mission. Foundations and advanced filters are available. Every answer includes an explanation and reference; completed missions include a debrief.
+
+Correct answers earn 100 XP plus a streak bonus capped at 100 additional XP per answer. Incorrect answers reset the streak. Only completed missions contribute to saved XP. Replays earn XP too: this is a practice game, not a certification or competitive leaderboard. Stats are browser-local, not authenticated or tamper-proof. Active missions survive page navigation in the same session, but not a page reload.
+
+Run tests with `node --test tests/quiz.test.cjs` (Node.js 22+; no npm install). The dashboard itself still only needs a static server.
+
+See [GITHUB-VERCEL-GUIDE.md](GITHUB-VERCEL-GUIDE.md) for the VS Code dev-branch → Vercel preview → GitHub pull request → main/production workflow.
