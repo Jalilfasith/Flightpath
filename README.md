@@ -2,16 +2,22 @@
 
 A responsive, dependency-free learning dashboard with a 60-day curriculum, clickable reference architecture, pipeline simulation, browser-local progress, and official documentation library.
 
+## Edition 02
+
+Warm ivory, graphite, and sage interface with subtle entrance, orbit, and pipeline animations. Motion can be disabled in the header and follows the operating system reduced-motion preference.
+
+The Essential concepts page contains 24 searchable, filterable field notes. Each note explains a concept, gives an example, and highlights a common mistake. The same notes are available in the relevant lesson.
+
 ## Run
 
 Requires Python 3 (no Node.js or npm required).
 
 ```bash
-cd /home/btcchl002/devops-60-days/flightpath
-python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
+cd /path/to/flightpath
+bash start.sh
 ```
 
-Open http://localhost:8080. Stop with Ctrl+C. Use port 8083 if 8080 is busy.
+Open http://localhost:8080. Stop with Ctrl+C. Use `bash start.sh 8083` if 8080 is busy. Replace `/path/to/flightpath` with the folder you extracted. On Windows, open the extracted folder in a terminal and run `py -m http.server 8080 --bind 127.0.0.1 --directory dist`.
 
 Alternatively, serve `dist/` with any static web server. The optional Google Fonts stylesheet needs internet; system fonts work offline. External documentation requires internet.
 
@@ -54,3 +60,13 @@ Core references consulted 2026-11-05:
 - https://prometheus.io/docs/introduction/overview/
 
 Additional official reading: https://git-scm.com/book/en/v2, https://www.gnu.org/software/bash/manual/bash.html, https://trivy.dev/latest/docs/, https://grafana.com/docs/grafana/latest/.
+
+## Additional references for advanced notes
+
+- https://kubernetes.io/docs/concepts/workloads/pods/probes/
+- https://sre.google/sre-book/service-level-objectives/
+- https://developer.hashicorp.com/terraform/language/manage-sensitive-data
+
+## Portable folder
+
+The ZIP includes the application, this guide, and start.sh. It excludes Git history, hosting identity, and temporary files. You do not need npm or a cloud account to run it.
